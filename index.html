@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="Elite's English Academy — Professional English Teacher Training">
+<title>Elite's English Academy | Learn • Teach • Grow</title>
+<style>
+:root{--navy:#071a49;--blue:#123d82;--gold:#e4bd58;--cream:#fffaf0;--ink:#101c35;--muted:#64748b;--white:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--ink);background:#f7f9fd;line-height:1.6;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+nav{position:fixed;top:0;left:0;width:100%;z-index:20;padding:18px 7%;display:flex;justify-content:space-between;align-items:center;background:#071a49cc;backdrop-filter:blur(18px);border-bottom:1px solid #ffffff18;transition:.3s}
+nav.scrolled{background:#071a49f5;box-shadow:0 12px 35px #0003}
+.logo{font-weight:900;letter-spacing:.3px;color:#fff}.logo span{color:var(--gold)}
+.links{display:flex;gap:27px;color:#dbe7ff;font-weight:650;font-size:14px}.links a{position:relative}.links a:after{content:"";position:absolute;left:0;bottom:-7px;width:0;height:2px;background:var(--gold);transition:.3s}.links a:hover:after{width:100%}
+.hero{min-height:100vh;position:relative;display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:55px;padding:140px 7% 90px;color:#fff;background:radial-gradient(circle at 80% 30%,#285db5 0,#12346f 25%,#071a49 65%);overflow:hidden}
+.grid{position:absolute;inset:0;opacity:.13;background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:60px 60px;mask-image:linear-gradient(to bottom,black,transparent)}
+.orb{position:absolute;border-radius:50%;filter:blur(2px);opacity:.3;animation:float 9s ease-in-out infinite}.orb.one{width:260px;height:260px;background:#e4bd58;right:-80px;top:18%}.orb.two{width:170px;height:170px;background:#4b9cff;left:42%;bottom:-50px;animation-delay:-3s}.orb.three{width:90px;height:90px;background:#fff;right:36%;top:14%;opacity:.1;animation-delay:-5s}
+@keyframes float{50%{transform:translate3d(0,-30px,0) scale(1.08)}}
+.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--gold);font-weight:850;letter-spacing:2px;font-size:13px}.dot{width:8px;height:8px;background:var(--gold);border-radius:50%;box-shadow:0 0 20px var(--gold)}
+h1{font-size:clamp(46px,7vw,78px);line-height:.98;letter-spacing:-3px;margin:18px 0 25px;max-width:760px}.gold{color:var(--gold)}
+.hero p{font-size:19px;color:#dbe7ff;max-width:650px}
+.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 21px;border-radius:10px;font-weight:850;transition:.3s}.primary{background:var(--gold);color:#071a49;box-shadow:0 12px 30px #e4bd5833}.primary:hover{transform:translateY(-3px);box-shadow:0 18px 35px #e4bd5855}.ghost{border:1px solid #ffffff38;background:#ffffff0b;color:#fff}.ghost:hover{background:#fff;color:var(--navy)}
+.hero-card{position:relative;padding:30px;border:1px solid #ffffff25;background:#ffffff10;backdrop-filter:blur(18px);border-radius:24px;box-shadow:0 30px 70px #0004;transform:rotate(1.5deg);animation:cardIn 1s ease both}.hero-card:before{content:"";position:absolute;inset:-1px;border-radius:24px;padding:1px;background:linear-gradient(135deg,#e4bd58aa,transparent 45%,#ffffff33);-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
+@keyframes cardIn{from{opacity:0;transform:translateY(30px) rotate(3deg)}to{opacity:1;transform:rotate(1.5deg)}}
+.badge{display:inline-block;padding:7px 10px;border-radius:100px;background:#e4bd581c;color:#f6d984;font-size:12px;font-weight:800}.hero-card h2{font-size:30px;margin:15px 0}.program{display:flex;align-items:center;gap:15px;padding:15px 0;border-top:1px solid #ffffff18}.num{font-size:24px;font-weight:900;color:var(--gold);width:48px}.program b{display:block}.program small{color:#bdcce5}
+section{padding:100px 7%}.section-head{text-align:center;max-width:760px;margin:0 auto 50px}.kicker{color:#b18625;font-weight:900;letter-spacing:2px;font-size:12px}.section-head h2{font-size:clamp(34px,5vw,52px);line-height:1.05;margin:10px 0 15px;letter-spacing:-1.5px}.section-head p{color:var(--muted);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1120px;margin:auto}.card{position:relative;background:#fff;border:1px solid #e7ebf2;padding:30px;border-radius:20px;box-shadow:0 12px 35px #0b24500b;transition:.35s;overflow:hidden}.card:before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:linear-gradient(90deg,var(--gold),#f3dd9b)}.card:hover{transform:translateY(-9px);box-shadow:0 22px 50px #0b245018}.icon{width:48px;height:48px;border-radius:13px;display:grid;place-items:center;background:#fff7df;color:#9b741c;font-size:22px;margin-bottom:20px}.card h3{font-size:23px;margin-bottom:9px}.card p{color:var(--muted)}
+.feature{background:#eef3fb}.feature-grid{max-width:1100px;margin:auto;display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}.feature-box{background:var(--navy);color:#fff;border-radius:26px;padding:42px;position:relative;overflow:hidden}.feature-box:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-70px;background:#e4bd5830}.feature-box h2{font-size:38px;line-height:1.1;margin:14px 0}.feature-box p{color:#cbd8ee}.checklist{display:grid;gap:15px}.check{display:flex;gap:13px;align-items:flex-start;background:#fff;padding:17px;border-radius:14px;box-shadow:0 8px 25px #0b245008}.check span{color:#a77b1c;font-weight:900}
+.trainer{max-width:850px;margin:auto;text-align:center}.trainer-card{padding:42px;border-radius:24px;background:#fff;border:1px solid #e7ebf2;box-shadow:0 20px 50px #0b245010}.initial{width:82px;height:82px;margin:0 auto 18px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--navy),#2454a2);color:var(--gold);font-size:29px;font-weight:900}.trainer-card h3{font-size:28px}.trainer-card p{color:var(--muted)}.credentials{margin-top:17px;color:#8a681d!important;font-weight:800}
+.contact{background:var(--navy);color:#fff;text-align:center;position:relative;overflow:hidden}.contact:before{content:"";position:absolute;width:500px;height:500px;border-radius:50%;background:#2d64bd35;filter:blur(30px);left:-250px;top:-250px}.contact .section-head p{color:#cbd8ee}.contact-info{position:relative;display:flex;justify-content:center;gap:14px;flex-wrap:wrap;color:#dbe7ff}.contact-info div{padding:13px 18px;border:1px solid #ffffff1c;border-radius:12px;background:#ffffff08}
+footer{padding:24px 7%;background:#041333;color:#9fb0cc;text-align:center;font-size:13px}
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .7s ease,transform .7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:850px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:125px}.hero-card{max-width:600px}.cards,.feature-grid{grid-template-columns:1fr}section{padding:75px 6%}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav id="nav"><a class="logo" href="#">ELITE'S <span>ENGLISH ACADEMY</span></a><div class="links"><a href="#courses">Courses</a><a href="#why">Why Elite's</a><a href="#trainer">Trainer</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div class="grid"></div><div class="orb one"></div><div class="orb two"></div><div class="orb three"></div>
+<div class="reveal">
+<div class="eyebrow"><i class="dot"></i> LEARN • TEACH • GROW</div>
+<h1>Build confidence. <span class="gold">Teach English.</span> Grow your career.</h1>
+<p>Professional English teacher training designed to develop communication, classroom skills and the confidence to teach effectively.</p>
+<div class="actions"><a class="btn primary" href="#contact">Enquire Now →</a><a class="btn ghost" href="#courses">Explore Courses</a></div>
+</div>
+<div class="hero-card">
+<span class="badge">TEACHER TRAINING PROGRAMS</span><h2>Choose your learning journey</h2>
+<div class="program"><div class="num">03</div><div><b>3 Month Course</b><small>Focused skill development</small></div></div>
+<div class="program"><div class="num">06</div><div><b>6 Month Course</b><small>Structured teacher training</small></div></div>
+<div class="program"><div class="num">12</div><div><b>1 Year Course</b><small>Complete training journey</small></div></div>
+</div>
+</header>
+
+<section id="courses">
+<div class="section-head reveal"><div class="kicker">OUR PROGRAMS</div><h2>Training that moves you forward.</h2><p>Practical, structured learning for aspiring and developing English teachers.</p></div>
+<div class="cards">
+<div class="card reveal"><div class="icon">03</div><h3>3 Month Course</h3><p>Build essential English communication and teaching skills through focused training.</p></div>
+<div class="card reveal"><div class="icon">06</div><h3>6 Month Course</h3><p>Develop stronger teaching ability with structured learning and practical guidance.</p></div>
+<div class="card reveal"><div class="icon">12</div><h3>1 Year Course</h3><p>A complete long-term journey for serious professional development in English teaching.</p></div>
+</div>
+</section>
+
+<section class="feature" id="why">
+<div class="feature-grid">
+<div class="feature-box reveal"><div class="kicker">WHY ELITE'S</div><h2>Learn more than English. Learn how to teach it.</h2><p>Turn language knowledge into practical classroom confidence with guided training.</p></div>
+<div class="checklist">
+<div class="check reveal"><span>✓</span><div><b>English Communication</b><br><small>Strengthen fluency and confidence.</small></div></div>
+<div class="check reveal"><span>✓</span><div><b>Grammar & Phonics</b><br><small>Build a strong language foundation.</small></div></div>
+<div class="check reveal"><span>✓</span><div><b>Classroom Teaching Skills</b><br><small>Learn practical teaching techniques.</small></div></div>
+<div class="check reveal"><span>✓</span><div><b>Personality Development</b><br><small>Present yourself with confidence.</small></div></div>
+<div class="check reveal"><span>✓</span><div><b>Practical Teaching & Assessment</b><br><small>Apply your learning in real situations.</small></div></div>
+</div>
+</div>
+</section>
+
+<section id="trainer">
+<div class="section-head reveal"><div class="kicker">YOUR MENTOR</div><h2>Learn from experience.</h2></div>
+<div class="trainer"><div class="trainer-card reveal"><div class="initial">JW</div><h3>Prof. J. M. Wagh-Dhotre</h3><p>Experienced English Educator • Trainer • Mentor • Guide</p><p class="credentials">M.A. English &nbsp;|&nbsp; MH-SET &nbsp;|&nbsp; 12+ Years Teaching Experience</p></div></div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-head reveal"><div class="kicker">START TODAY</div><h2>Ready to become a confident English teacher?</h2><p>Get in touch with Elite's English Academy for course and admission information.</p></div>
+<div class="contact-info reveal"><div>📞 88887 11228</div><div>📍 Near Sai Deep Hospital, Mondha Naka, Georai</div></div>
+<div class="actions" style="justify-content:center;position:relative"><a class="btn primary" href="https://wa.me/918888711228">WhatsApp Us →</a></div>
+</section>
+<footer>© 2026 Elite's English Academy · Professional English Teacher Training</footer>
+
+<script>
+const nav=document.getElementById('nav');
+window.addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30));
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
